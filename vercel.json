@@ -1,18 +1,30 @@
 {
+  "cleanUrls": false,
   "rewrites": [
-    {
-      "source": "/",
-      "destination": "/studyarena-v2.html"
-    }
+    { "source": "/studyarena-v2.html", "destination": "/index.html" },
+    { "source": "/og.png", "destination": "/og-1.png" },
+    { "source": "/apple-touch-icon.png", "destination": "/apple-touch-icon-1.png" },
+    { "source": "/((?!api/)[^.]*)", "destination": "/index.html" }
   ],
   "headers": [
     {
       "source": "/sw.js",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+        { "key": "Service-Worker-Allowed", "value": "/" }
+      ]
+    },
+    {
+      "source": "/sa-manifest.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(png|jpg|svg|ico)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     }
   ]
