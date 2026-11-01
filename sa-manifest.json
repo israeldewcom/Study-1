@@ -1,0 +1,77 @@
+{
+  "id": "/studyarena-v2.html",
+  "name": "Study Arena",
+  "short_name": "Study Arena",
+  "description": "Practise WAEC, JAMB, IELTS, civil service tests and job interviews with an AI tutor. 50 questions free.",
+  "start_url": "/studyarena-v2.html?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#2338E6",
+  "theme_color": "#2338E6",
+  "lang": "en-NG",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "icon-192-1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New quiz",
+      "short_name": "Quiz",
+      "url": "/studyarena-v2.html?source=shortcut#practice",
+      "icons": [
+        {
+          "src": "icon-192-1.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Ask the tutor",
+      "short_name": "Tutor",
+      "url": "/studyarena-v2.html?source=shortcut#tutor",
+      "icons": [
+        {
+          "src": "icon-192-1.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Leaderboard",
+      "short_name": "Ranking",
+      "url": "/studyarena-v2.html?source=shortcut#board",
+      "icons": [
+        {
+          "src": "icon-192-1.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
