@@ -1,0 +1,9 @@
+{
+  "appId": "com.studyarena.app",
+  "appName": "Study Arena",
+  "webDir": "www",
+  "backgroundColor": "#2338E6",
+  "android": {
+    "allowMixedContent": false
+  }
+}
