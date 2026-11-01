@@ -1,0 +1,31 @@
+{
+  "id": "/",
+  "name": "Study Arena",
+  "short_name": "Study Arena",
+  "description": "Practise WAEC, JAMB, IELTS, civil service tests and job interviews with an AI tutor. 50 questions free.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#2338E6",
+  "theme_color": "#2338E6",
+  "lang": "en-NG",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "New quiz", "short_name": "Quiz", "url": "/?source=shortcut#practice", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Ask the tutor", "short_name": "Tutor", "url": "/?source=shortcut#tutor", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Leaderboard", "short_name": "Ranking", "url": "/?source=shortcut#board", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "screenshots": [
+    { "src": "screenshots/1.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Try a sample question" },
+    { "src": "screenshots/2.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Your progress and free questions" },
+    { "src": "screenshots/3.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Mock interview with feedback" }
+  ]
+}
