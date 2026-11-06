@@ -1,6 +1,6 @@
 /* Study Arena service worker.
    Change VERSION on every release so installed apps pick up the new files. */
-const VERSION = 'sa-v2';
+const VERSION = 'sa-v3';
 const SHELL = ['./', './studyarena-v2.html', './sa-manifest.json', './icon-192-1.png', './icon-512-1.png', './favicon-32.png', './og.png'];
 
 self.addEventListener('install', (e) => {
@@ -21,7 +21,7 @@ async function networkFirst(req) {
   const cache = await caches.open(VERSION);
   try {
     const ctl = new AbortController();
-    const t = setTimeout(() => ctl.abort(), 3500); // slow network: show the saved copy instead of waiting
+    const t = setTimeout(() => ctl.abort(), 9000); // slow network: show the saved copy instead of waiting
     const res = await fetch(req, { signal: ctl.signal });
     clearTimeout(t);
     if (res && res.ok) cache.put(req, res.clone());
