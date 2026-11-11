@@ -3,6 +3,10 @@
   "appName": "Study Arena",
   "webDir": "www",
   "backgroundColor": "#2338E6",
+  "server": {
+    "url": "https://studry-1.vercel.app",
+    "cleartext": false
+  },
   "android": {
     "allowMixedContent": false
   }
