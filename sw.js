@@ -1,6 +1,6 @@
 /* Study Arena service worker.
    Change VERSION on every release so installed apps pick up the new files. */
-const VERSION = 'sa-v5';
+const VERSION = 'sa-v6';
 const SHELL = ['./', './studyarena-v2.html', './sa-manifest.json', './icon-192-1.png', './icon-512-1.png', './favicon-32.png', './og.png'];
 
 self.addEventListener('install', (e) => {
